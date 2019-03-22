@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54187CE19F2321684F5B6FC0 /* Pods_Teprature_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA39E20A2B88D50A6B8A6FE6 /* Pods_Teprature_Test.framework */; };
 		60B0311B2242677C0012D37D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0311A2242677C0012D37D /* AppDelegate.swift */; };
 		60B0311D2242677C0012D37D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0311C2242677C0012D37D /* ViewController.swift */; };
 		60B031202242677C0012D37D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60B0311E2242677C0012D37D /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		60B03125224267860012D37D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60B03123224267860012D37D /* LaunchScreen.storyboard */; };
 		60B03130224267870012D37D /* Teprature_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0312F224267870012D37D /* Teprature_TestTests.swift */; };
 		60B0313B224267870012D37D /* Teprature_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0313A224267870012D37D /* Teprature_TestUITests.swift */; };
+		60B0314A224278700012D37D /* AFWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B03149224278700012D37D /* AFWrapper.swift */; };
+		60B0314C22427A960012D37D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B0314B22427A960012D37D /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,11 @@
 		60B03136224267870012D37D /* Teprature_TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Teprature_TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B0313A224267870012D37D /* Teprature_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teprature_TestUITests.swift; sourceTree = "<group>"; };
 		60B0313C224267870012D37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60B03149224278700012D37D /* AFWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFWrapper.swift; sourceTree = "<group>"; };
+		60B0314B22427A960012D37D /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		87A3F9109312C47F3479BE8F /* Pods-Teprature_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teprature_Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Teprature_Test/Pods-Teprature_Test.release.xcconfig"; sourceTree = "<group>"; };
+		DA39E20A2B88D50A6B8A6FE6 /* Pods_Teprature_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teprature_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDFE1C9113C619F69E66F10 /* Pods-Teprature_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teprature_Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Teprature_Test/Pods-Teprature_Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54187CE19F2321684F5B6FC0 /* Pods_Teprature_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25DAA87B7E966F4EFFCE078C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDDFE1C9113C619F69E66F10 /* Pods-Teprature_Test.debug.xcconfig */,
+				87A3F9109312C47F3479BE8F /* Pods-Teprature_Test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		60B0310E2242677B0012D37D = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +99,8 @@
 				60B0312E224267870012D37D /* Teprature_TestTests */,
 				60B03139224267870012D37D /* Teprature_TestUITests */,
 				60B031182242677B0012D37D /* Products */,
+				25DAA87B7E966F4EFFCE078C /* Pods */,
+				EBCA3210E5C0DEB24C0C11DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +117,7 @@
 		60B031192242677B0012D37D /* Teprature_Test */ = {
 			isa = PBXGroup;
 			children = (
+				60B03148224277E90012D37D /* Resources */,
 				60B0311A2242677C0012D37D /* AppDelegate.swift */,
 				60B0311C2242677C0012D37D /* ViewController.swift */,
 				60B0311E2242677C0012D37D /* Main.storyboard */,
@@ -125,6 +146,23 @@
 			path = Teprature_TestUITests;
 			sourceTree = "<group>";
 		};
+		60B03148224277E90012D37D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60B0314B22427A960012D37D /* Helper.swift */,
+				60B03149224278700012D37D /* AFWrapper.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EBCA3210E5C0DEB24C0C11DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA39E20A2B88D50A6B8A6FE6 /* Pods_Teprature_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60B0313F224267870012D37D /* Build configuration list for PBXNativeTarget "Teprature_Test" */;
 			buildPhases = (
+				89C3BD47F19AD9A298560724 /* [CP] Check Pods Manifest.lock */,
 				60B031132242677B0012D37D /* Sources */,
 				60B031142242677B0012D37D /* Frameworks */,
 				60B031152242677B0012D37D /* Resources */,
+				755116A7898517A05EBBC297 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,13 +291,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		755116A7898517A05EBBC297 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Teprature_Test/Pods-Teprature_Test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Teprature_Test/Pods-Teprature_Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89C3BD47F19AD9A298560724 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Teprature_Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		60B031132242677B0012D37D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				60B0311D2242677C0012D37D /* ViewController.swift in Sources */,
+				60B0314A224278700012D37D /* AFWrapper.swift in Sources */,
 				60B0311B2242677C0012D37D /* AppDelegate.swift in Sources */,
+				60B0314C22427A960012D37D /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,15 +519,13 @@
 		};
 		60B03140224267870012D37D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDFE1C9113C619F69E66F10 /* Pods-Teprature_Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C984PPGJ48;
 				INFOPLIST_FILE = Teprature_Test/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iTech.Teprature-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -448,15 +535,13 @@
 		};
 		60B03141224267870012D37D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A3F9109312C47F3479BE8F /* Pods-Teprature_Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C984PPGJ48;
 				INFOPLIST_FILE = Teprature_Test/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iTech.Teprature-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -472,11 +557,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C984PPGJ48;
 				INFOPLIST_FILE = Teprature_TestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iTech.Teprature-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -493,11 +574,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C984PPGJ48;
 				INFOPLIST_FILE = Teprature_TestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iTech.Teprature-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -513,11 +590,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C984PPGJ48;
 				INFOPLIST_FILE = Teprature_TestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iTech.Teprature-TestUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -533,11 +606,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C984PPGJ48;
 				INFOPLIST_FILE = Teprature_TestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.iTech.Teprature-TestUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
