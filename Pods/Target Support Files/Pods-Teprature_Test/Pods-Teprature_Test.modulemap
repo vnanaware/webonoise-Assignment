@@ -1,0 +1,6 @@
+framework module Pods_Teprature_Test {
+  umbrella header "Pods-Teprature_Test-umbrella.h"
+
+  export *
+  module * { export * }
+}
